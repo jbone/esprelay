@@ -9,8 +9,11 @@ Arduino with a ESP8266 WiFi module).
 You need Python >= 2.7 and < 3 (although conversion to Python 3 would
 be trivial).
 
-Just run "python esprelay.py" and telnet to port 54321 to test it out.
-Read the section below on the protocol so you know what to send.
+# Running 
+
+Just run "python esprelay.py".  To test it out, open two or more telnet 
+sessions to "localhost 54321", type the same conversation ID string
+for each, then send messages to yourself.
 
 # Configuration
 
