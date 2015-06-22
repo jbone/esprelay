@@ -72,7 +72,11 @@ class ConversationConnectionHandler(StreamRequestHandler):
         Thread(target=self._write_handler).start()
 
         while True:
-            line = self.rfile.readline()
+            try:
+                line = self.rfile.readline()
+            except error:
+                # Client disconnected or other socket error
+                break
             if not line:
                 # Client disconnected
                 break
