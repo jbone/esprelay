@@ -1,0 +1,4 @@
+esprelay - Tiny text relay server for embedded devices
+Copyright 2015 Shaw Terwilliger
+
+See the LICENSE.txt file for licensing information.
